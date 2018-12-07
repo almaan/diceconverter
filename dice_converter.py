@@ -94,6 +94,6 @@ if __name__ == '__main__':
         else:
             out_name = ''.join([splitted_name[0], '.png'])
         
-    img.save(out_name)
+        img.save(out_name)
     
     print(f'Successfully saved genrated image')
