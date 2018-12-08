@@ -24,8 +24,7 @@ def make_dice_image(img, n):
     img = img.convert('L')
     newsize = (n*img.size[0],n*img.size[1])
     img = np.array(img).T
-    _, edges = np.histogram(img, bins = 5)
-    digitized = 7 - np.digitize(img, bins = edges)
+    digitized = 7 - np.digitize(img, bins = np.linspace(0,255,6))
     out = Image.new('L', newsize)
     
     for x in range(0,newsize[0],n):
