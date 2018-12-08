@@ -58,7 +58,7 @@ prs = arp.ArgumentParser()
 
 prs.add_argument('-i','--image_file',
                  required = True,
-                 help = ''.join(['name of image file',
+                 help = ' '.join(['name of image file',
                                  'to be converted',
                                  ]))
     
@@ -66,8 +66,8 @@ prs.add_argument('-i','--image_file',
 prs.add_argument("-o","--output_file",
                  required = False,
                  default = 'dice_picture.png',
-                 help = ''.join(["name of to which picture shoul",
-                                 'be save. if non given, default will',
+                 help = ' '.join(["name of file to which picture should",
+                                 'be saved. if non given, default will',
                                  'be used',
                                  ]))
 
@@ -76,26 +76,27 @@ prs.add_argument('-ds','--die_size',
                  required = False,
                  type = int,
                  default = 10,
-                 help = ''.join(['size of each die that',
-                                 'will represent each pixel',
-                                 'picture will be scaled by',
-                                 'this amount unless rescaled',
+                 help = ' '.join(['size of each die faces',
+                                 'one die will represent'
+                                 ' one pixel. Meaning that',
+                                 'pictures will be scaled by',
+                                 'this the same factor',
                                  ]))
     
 prs.add_argument("-r","--resize_factor",
                  required = False,
                  type = float,
                  default = 1.0,
-                 help = ''.join(['ratio by which original picture should',
+                 help = ' '.join(['ratio by which original picture should',
                                  'be rescaled. Recommended to use for', 
-                                 'picture larger than 1000x1000px',
+                                 'pictures larger than 1000x1000px',
                                  ]))
 
 prs.add_argument("-k","--keep_size",
                  required = False,
                  action = 'store_true',
                  default = False,
-                 help = ''.join(['keep current size of image',
+                 help = ' '.join(['keep current size of image',
                                  'and scale die images accordingly',
                                  ]))
     
