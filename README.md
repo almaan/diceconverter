@@ -103,3 +103,7 @@ Turned into
 <img src="https://github.com/almaan/diceconverter/blob/master/res/test_case2_out.png" alt="drawing" width="500" height="500"/>
 </div>
 
+### Credits
+- Thanks to <a href="https://github.com/holysanctity">holysanctity</a> for
+  making the suggestion to add the ability to choose between several different
+  images for each face.
